@@ -63,6 +63,18 @@
             padding:20px;
         }
 
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-family:  Calibri;
+            color:#2BC890;
+        }
+
     </style>
 </head>
 <body>
@@ -71,70 +83,74 @@
             <p>Kindly fill in  form for placements</p>
           <form>
             <div class = "first-field">
+
+            <fieldset>
+                <legend>User information</legend>
+
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type = "text" id = "name" name = "name" style =" width: 200px; height: 25px;" required>
+                </div>
+        
+                <br>
+        
+                <div class = "second-field"> 
+                    <label for = "email">Email:</label>
+                    <input type = "email" id = "email" name = "email" style = "width :200px; height: 25px;"required>
+                </div>
+                <br>
+        
+                <div class = "third-field">
+                    <label for = "number">Phone number:</label>
+                    <input type = "tel"  id = "number" name = "number" style =" width: 200px; height: 25px;"required>
+                </div>
+        
+           
+                <br>
+    
+                <div>
+                <label for = "gender">Select your gender:</label>
+                <br>
+                <input type = "radio"  id = "male"  name = "gender" value = "male">
+                <label for = "male" >Male</label><br>
+                <input type = "radio" id = "female" name = "gender" value = "female">
+                <label for = "female">Female</label>
+                </div>
+    
+                <br>
+    
+                <div>
+                <label for = "dob">DOB:</label>
+                <input type = "date"  id = "dob" name = "dob">
+                </div>
+    
+                <br>
+    
+                <div> 
+                <label>Select the courses below that you learned</label><br>
+                <input type = "checkbox" name = "interest" value = "java">
+                <label>Java</label><br>
+                <input type = "checkbox"  name = "interest" value = "python">
+                <label>Python</label><br>
+                <input type = "checkbox"  name = "interest" value = "frontend development">
+                <label>Frontend development</label><br>
+                <input type = "checkbox"  name = "interest" value = "Backend development">
+                <label>Backend development</label><br>
+                <input type = "checkbox"  name = "interest" value = "SQL">
+                <label>SQL</label>
+                </div>
+    
+                 <br>
+    
+                <div>
+                <label for = "certificate">Upload Course certificate: </label>
+                <input type = "file" id = "certificate" name = "certificate">
+                </div>
+    
+                <br>
+              </div>
+            </fieldset>
             
-
-            <div>
-                <label for="name">Full Name:</label>
-                <input type = "text" id = "name" name = "name" style =" width: 200px; height: 25px;" required>
-            </div>
-    
-            <br>
-    
-            <div class = "second-field"> 
-                <label for = "email">Email:</label>
-                <input type = "email" id = "email" name = "email" style = "width :200px; height: 25px;"required>
-            </div>
-            <br>
-    
-            <div class = "third-field">
-                <label for = "number">Phone number:</label>
-                <input type = "tel"  id = "number" name = "number" style =" width: 200px; height: 25px;"required>
-            </div>
-    
-       
-            <br>
-
-            <div>
-            <label for = "gender">Select your gender:</label>
-            <br>
-            <input type = "radio"  id = "male"  name = "gender" value = "male">
-            <label for = "male" >Male</label><br>
-            <input type = "radio" id = "female" name = "gender" value = "female">
-            <label for = "female">Female</label>
-            </div>
-
-            <br>
-
-            <div>
-            <label for = "dob">DOB:</label>
-            <input type = "date"  id = "dob" name = "dob">
-            </div>
-
-            <br>
-
-            <div> 
-            <label>Select the courses below that you learned</label><br>
-            <input type = "checkbox" name = "interest" value = "java">
-            <label>Java</label><br>
-            <input type = "checkbox"  name = "interest" value = "python">
-            <label>Python</label><br>
-            <input type = "checkbox"  name = "interest" value = "frontend development">
-            <label>Frontend development</label><br>
-            <input type = "checkbox"  name = "interest" value = "Backend development">
-            <label>Backend development</label><br>
-            <input type = "checkbox"  name = "interest" value = "SQL">
-            <label>SQL</label>
-            </div>
-
-             <br>
-
-            <div>
-            <label for = "certificate">Upload Course certificate: </label>
-            <input type = "file" id = "certificate" name = "certificate">
-            </div>
-
-            <br>
-          </div>
             <div class = "last-field">
                 <input type = "submit" value = "submit">
             </div>
