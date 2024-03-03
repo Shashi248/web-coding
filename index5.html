@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,p{
+            text-align:center;
+            background-color:#444444;
+        }
+
+
+        h1 {
+            color:#FFFFFF;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:44px;
+            margin:0;
+        }
+
+        p{
+            color:#FFFFFF;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:14px;
+            margin:0;
+        }
+        .second-field input{
+            margin-left:30px; 
+        }
+
+        body{
+            background-color:#2BC890;
+        }
+
+        fieldset{
+            margin-bottom:20px;
+        }
+
+
+        input[type="submit"]{
+            padding :10px 20px;
+            background-color:#2BC890;
+            border-radius:15px;
+            border:none;
+            box-shadow:none;
+            cursor:pointer;
+            margin-bottom:30px;
+        }
+
+        .form{
+            margin:20px auto;
+            max-width:600px;
+            background-color:white;
+            border-radius:8px;
+            padding:0px;
+        }
+
+        .last-field{
+            text-align: center;
+        }
+
+        .first-field{
+            padding:20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "form">
+            <h1>Registration Form</h1>
+            <p>Kindly fill in  form for placements</p>
+          <form>
+            <div class = "first-field">
+            
+
+            <div>
+                <label for="name">Full Name:</label>
+                <input type = "text" id = "name" name = "name" style =" width: 200px; height: 25px;" required>
+            </div>
+    
+            <br>
+    
+            <div class = "second-field"> 
+                <label for = "email">Email:</label>
+                <input type = "email" id = "email" name = "email" style = "width :200px; height: 25px;"required>
+            </div>
+            <br>
+    
+            <div class = "third-field">
+                <label for = "number">Phone number:</label>
+                <input type = "tel"  id = "number" name = "number" style =" width: 200px; height: 25px;"required>
+            </div>
+    
+       
+            <br>
+
+            <div>
+            <label for = "gender">Select your gender:</label>
+            <br>
+            <input type = "radio"  id = "male"  name = "gender" value = "male">
+            <label for = "male" >Male</label><br>
+            <input type = "radio" id = "female" name = "gender" value = "female">
+            <label for = "female">Female</label>
+            </div>
+
+            <br>
+
+            <div>
+            <label for = "dob">DOB:</label>
+            <input type = "date"  id = "dob" name = "dob">
+            </div>
+
+            <br>
+
+            <div> 
+            <label>Select the courses below that you learned</label><br>
+            <input type = "checkbox" name = "interest" value = "java">
+            <label>Java</label><br>
+            <input type = "checkbox"  name = "interest" value = "python">
+            <label>Python</label><br>
+            <input type = "checkbox"  name = "interest" value = "frontend development">
+            <label>Frontend development</label><br>
+            <input type = "checkbox"  name = "interest" value = "Backend development">
+            <label>Backend development</label><br>
+            <input type = "checkbox"  name = "interest" value = "SQL">
+            <label>SQL</label>
+            </div>
+
+             <br>
+
+            <div>
+            <label for = "certificate">Upload Course certificate: </label>
+            <input type = "file" id = "certificate" name = "certificate">
+            </div>
+
+            <br>
+          </div>
+            <div class = "last-field">
+                <input type = "submit" value = "submit">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
